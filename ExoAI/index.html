@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExoAI</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="top-bar">
+        <button class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        
+        <div class="logo">ExoAI.net</div>
+        
+        <div class="auth-buttons">
+            <button class="login-btn">Login</button>
+            <button class="register-btn">Register</button>
+        </div>
+    </div>
+
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-links">
+            <a href="#home" class="sidebar-link">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+            <a href="#features" class="sidebar-link">
+                <i class="fas fa-star"></i>
+                <span>Features</span>
+            </a>
+            <a href="#pricing" class="sidebar-link">
+                <i class="fas fa-tags"></i>
+                <span>Pricing</span>
+            </a>
+            <a href="#about" class="sidebar-link">
+                <i class="fas fa-info-circle"></i>
+                <span>About</span>
+            </a>
+        </div>
+    </div>
+    <div class="grid-container">
+        <div class="grid"></div>
+    </div>
+
+
+    <section id="home" class="hero-section">
+        <div class="top-bar">
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <div class="logo">ExoAI.net</div>
+            
+            <div class="auth-buttons">
+                <button class="login-btn">Login</button>
+                <button class="register-btn">Register</button>
+            </div>
+        </div>
+
+        <div class="hero">
+            <div class="logo-main" data-aos="fade-up">E</div>
+            <h1 data-aos="fade-up">Welcome to ExoAI</h1>
+            <p data-aos="fade-up" data-aos-delay="200">Next-Generation AI Trading & Analysis</p>
+            <div class="hero-stats" data-aos="fade-up" data-aos-delay="300">
+                <div class="stat">
+                    <span class="stat-number">$2.5M+</span>
+                    <span class="stat-label">Trading Volume</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">50K+</span>
+                    <span class="stat-label">Active Users</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">99.9%</span>
+                    <span class="stat-label">Uptime</span>
+                </div>
+            </div>
+            <button class="cta-button" data-aos="fade-up" data-aos-delay="400">
+                Launch Platform
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+    </section>
+
+    <section id="about" class="content-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">About Us</h2>
+            <div class="content-grid">
+                <div class="text-content">
+                    <h3>Innovation Meets Design</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="image-container">
+                    <div class="image-wrapper">
+                        <img src="https://via.placeholder.com/500x300" alt="About Us">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="content-section dark">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Features</h2>
+            <div class="features-grid">
+                <div class="feature-card" data-feature="design">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Modern Design</h3>
+                    <p class="feature-preview">Sleek and intuitive user interface design.</p>
+                </div>
+                <div class="feature-card" data-feature="secure">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Secure</h3>
+                    <p class="feature-preview">Enterprise-grade security and protection.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="content-section dark">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Our Services</h2>
+            <div class="content-grid">
+                <div class="image-container js-tilt" data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.8">
+                    <div class="image-wrapper">
+                        <img src="https://via.placeholder.com/500x300" alt="Services">
+                    </div>
+                    <div class="glow-effect"></div>
+                </div>
+                <div class="text-content" data-aos="fade-left">
+                    <h3>Premium Solutions</h3>
+                    <p>Our premium solutions are designed to meet the highest standards of performance and reliability. We combine cutting-edge technology with intuitive design to deliver exceptional results.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="content-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Pricing Plans</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card free" data-aos="fade-up" data-aos-delay="200">
+                    <div class="pricing-header">
+                        <h3>Free</h3>
+                        <div class="price">
+                            <span class="currency">£</span>
+                            <span class="amount">0</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Basic AI Features</li>
+                            <li><i class="fas fa-check"></i> 100 Requests/day</li>
+                            <li><i class="fas fa-check"></i> Community Support</li>
+                            <li><i class="fas fa-check"></i> Standard Response Time</li>
+                        </ul>
+                    </div>
+                    <button class="pricing-btn">Get Started</button>
+                </div>
+
+                <div class="pricing-card premium featured" data-aos="fade-up" data-aos-delay="400">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3>Premium</h3>
+                        <div class="price">
+                            <span class="currency">£</span>
+                            <span class="amount">15</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Advanced AI Features</li>
+                            <li><i class="fas fa-check"></i> Unlimited Requests</li>
+                            <li><i class="fas fa-check"></i> Priority Support</li>
+                            <li><i class="fas fa-check"></i> Faster Response Time</li>
+                            <li><i class="fas fa-check"></i> Custom AI Models</li>
+                            <li><i class="fas fa-check"></i> API Access</li>
+                        </ul>
+                    </div>
+                    <button class="pricing-btn premium-btn"><span>Upgrade Now</span></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="technology" class="content-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Technology Stack</h2>
+            <div class="content-grid">
+                <div class="text-content" data-aos="fade-right">
+                    <h3>Advanced Technology</h3>
+                    <p>Leveraging the latest in technological innovations, our stack ensures optimal performance, scalability, and security. We stay ahead of the curve to provide you with future-proof solutions.</p>
+                </div>
+                <div class="image-container" data-aos="fade-left">
+                    <img src="https://via.placeholder.com/500x300" alt="Technology">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="process" class="content-section dark">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Our Process</h2>
+            <div class="content-grid">
+                <div class="image-container" data-aos="fade-right">
+                    <img src="https://via.placeholder.com/500x300" alt="Process">
+                </div>
+                <div class="text-content" data-aos="fade-left">
+                    <h3>Streamlined Workflow</h3>
+                    <p>Our refined process ensures efficient delivery without compromising on quality. From initial concept to final deployment, we maintain clear communication and attention to detail at every step.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="content-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
+            <div class="contact-form" data-aos="fade-up" data-aos-delay="200">
+                <form>
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Message" required></textarea>
+                    <button type="submit" class="cta-button">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">E</div>
+                <p>Excellence in every pixel</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <ul>
+                    <li>Email: info@example.com</li>
+                    <li>Phone: (555) 123-4567</li>
+                    <li>Address: 123 Tech Street</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#" class="social-link">Twitter</a>
+                    <a href="#" class="social-link">LinkedIn</a>
+                    <a href="#" class="social-link">GitHub</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Excellence. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script src="auth.js"></script>
+    <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="parallax.js"></script>
+    <script src="features.js"></script>
+</body>
+</html>

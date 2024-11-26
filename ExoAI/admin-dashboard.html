@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - E</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="admin-container">
+        <nav class="admin-nav">
+            <div class="logo">E</div>
+            <div class="admin-menu">
+                <button class="menu-item active" data-tab="overview">Overview</button>
+                <button class="menu-item" data-tab="content">Content</button>
+                <button class="menu-item" data-tab="users">Users</button>
+                <button class="menu-item" data-tab="settings">Settings</button>
+            </div>
+            <div class="admin-profile">
+                <img src="admin-avatar.jpg" alt="Admin">
+                <span>Admin Name</span>
+            </div>
+        </nav>
+
+        <main class="admin-main">
+            <div class="tab-content active" id="overview">
+                <h2>Dashboard Overview</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h3>Total Users</h3>
+                        <p>1,234</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Active Sessions</h3>
+                        <p>56</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Content Updates</h3>
+                        <p>89</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="content">
+                <h2>Content Management</h2>
+                <div class="content-editor">
+                    <div class="section-list">
+                        <div class="section-item" draggable="true">
+                            <h3>About Section</h3>
+                            <button class="edit-btn">Edit</button>
+                        </div>
+                        <!-- Add more sections -->
+                    </div>
+                    <div class="editor-panel">
+                        <form id="contentForm">
+                            <input type="text" placeholder="Section Title">
+                            <textarea placeholder="Section Content"></textarea>
+                            <div class="image-upload">
+                                <label for="sectionImage">Upload Image</label>
+                                <input type="file" id="sectionImage" accept="image/*">
+                            </div>
+                            <button type="submit">Save Changes</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Other tab contents -->
+        </main>
+    </div>
+</body>
+</html>
